@@ -1,0 +1,31 @@
+{
+  "name": "blog-shuangyue",
+  "version": "1.0.0",
+  "description": "Node.js+Express+Koa2     web server博客项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=dev nodemon ./blog-1/bin/www.js",
+    "prd": "cross-env NODE_ENV=production nodemon ./blog-1/bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lishangwu/blog-shuangyue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lishangwu/blog-shuangyue/issues"
+  },
+  "homepage": "https://github.com/lishangwu/blog-shuangyue#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "mysql": "^2.16.0",
+    "redis": "^2.8.0",
+    "xss": "^1.0.6"
+  }
+}
