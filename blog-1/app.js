@@ -1,5 +1,7 @@
 const querystring = require('querystring')
 const { set, get } = require('./src/db/redis')
+const { access } = require('./src/utils/log')
+
 
 const handleBlogRouter = require('./src/router/blog')
 const handleUserRouter = require('./src/router/user')
@@ -37,6 +39,8 @@ const getCookieExpires = () => {
 const SESSION_DATA = {}
 
 const serverHandle = (req, res) => {
+    access(`${req.method} -- ${req.url} -- ${req.headers['user-agent']} -- ${Date.now()}`)
+
     res.setHeader('Content-Type', 'application/json')
 
     const url = req.url
