@@ -12,7 +12,7 @@ const { genPassword } = require('../utils/cryp')
 
 const user = module.exports
 
-user.logincheck = (username, password) => {
+user.login = (username, password) => {
     username = escape(username)
     // password = genPassword(password)
     password = escape(password)

@@ -1,4 +1,5 @@
 const querystring = require('querystring')
+const { set, get } = require('./src/db/redis')
 
 const handleBlogRouter = require('./src/router/blog')
 const handleUserRouter = require('./src/router/user')
@@ -26,23 +27,78 @@ const getPostData = (req) =>{
         })
     })
 }
+const getCookieExpires = () => {
+    const d = new Date()
+    d.setTime(d.getTime() + (24 * 60 * 60 * 1000))
+    return d.toGMTString()
+}
+
+
+const SESSION_DATA = {}
 
 const serverHandle = (req, res) => {
     res.setHeader('Content-Type', 'application/json')
-    console.log(req.method, req.url);
 
     const url = req.url
     req.path = url.split('?')[0]
-
     req.query = querystring.parse(url.split('?')[1])
 
-    getPostData(req).then(postData => {
+    //cookie
+    req.cookie = {}
+    const cookieStr = req.headers.cookie || '' //k1=v1;k2=v2;k3=v3
+    cookieStr.split(";").forEach(item => {
+        if(!item){
+            return
+        }
+        const arr = item.split('=')
+        const key = arr[0].trim()
+        const val = arr[1]
+        req.cookie[key] = val
+    })
+
+    //session
+    // let needSetCokkie = false
+    // let userId = req.cookie.userid
+    // if(userId){
+    //     if(!SESSION_DATA[userId]){
+    //         SESSION_DATA[userId] = {}
+    //     }
+    // }else{
+    //     needSetCokkie = true
+    //     userId = `${Date.now()}_${Math.random()}`
+    //     SESSION_DATA[userId] = {}
+    // }
+    // req.session = SESSION_DATA[userId]
+
+    let needSetCokkie = false
+    let userId = req.cookie.userid
+    if(!userId){
+        needSetCokkie = true
+        userId = `${Date.now()}_${Math.random()}`
+        set(userId, {})
+    }
+
+    req.sessionId = userId
+    get(req.sessionId).then(sessionData => {
+        if(sessionData == null){
+            set(req.sessionId, null)
+            req.session = {}
+        }else{
+            req.session = sessionData
+        }
+
+        return getPostData(req)
+    })
+    .then(postData => {
         req.body = postData
 
         //blog
         const blogResult = handleBlogRouter(req, res)
         if(blogResult){
             blogResult.then(blogData => {
+                if(needSetCokkie){
+                    res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
+                }
                 if(blogData){
                     res.end(JSON.stringify(blogData))
                 }
@@ -60,6 +116,9 @@ const serverHandle = (req, res) => {
         const userResult = handleUserRouter(req, res)
         if(userResult){
             userResult.then(userData => {
+                if(needSetCokkie){
+                    res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
+                }
                 if(userData){
                     res.end(JSON.stringify(userData))
                 }
