@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c4183cc-fd5b-49b9-8985-c43bf30ae0f6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/blog-1/src/utils/copy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-1/src/utils/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-1/src/utils/readline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stream/cp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stream/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stream/test1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/conf/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/controller/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/controller/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/db/mysql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/db/redis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/middleware/loginCheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/model/resModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/routes/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/routes/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/utils/copy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/utils/cryp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/utils/log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-express/utils/readline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-1/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curl/post.sh" beforeDir="false" afterPath="$PROJECT_DIR$/curl/post.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,79 +31,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stream/test1.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-express/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="216">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="copy.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-1/src/utils/copy.sh">
+      <file leaf-file-name="redis.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-express/db/redis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="559">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-express/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            <state relative-caret-position="242">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readline.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-1/src/utils/readline.js">
+      <file leaf-file-name="blog.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-express/routes/blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="291">
+              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="access.log" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog-1/logs/access.log">
+      <file leaf-file-name="loginCheck.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-express/middleware/loginCheck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="216">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-1/logs/event.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="log.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-1/src/utils/log.js">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-1/src/router/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="22" column="12" selection-start-line="22" selection-end-line="23" />
+            <state relative-caret-position="297">
+              <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-1/app.js">
+        <entry file="file://$PROJECT_DIR$/blog-express/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="43" column="53" lean-forward="true" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+            <state relative-caret-position="270">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cp.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stream/cp.js">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="27" selection-end-column="2" />
+            <state relative-caret-position="409">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="access.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-express/logs/access.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-1/src/router/blog.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="76" column="10" selection-start-line="69" selection-start-column="8" selection-end-line="76" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -115,6 +138,7 @@
       <find>path</find>
       <find>console</find>
       <find>chrome</find>
+      <find>RedisStore</find>
     </findStrings>
     <replaceStrings>
       <replace>req.path</replace>
@@ -134,7 +158,6 @@
         <option value="$PROJECT_DIR$/blog-1/src/db/redis.js" />
         <option value="$PROJECT_DIR$/blog-1/src/router/blog.js" />
         <option value="$PROJECT_DIR$/blog-1/src/router/user.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/stream/data.txt" />
         <option value="$PROJECT_DIR$/stream/data-bak.txt" />
         <option value="$PROJECT_DIR$/stream/cp.js" />
@@ -145,6 +168,14 @@
         <option value="$PROJECT_DIR$/blog-1/src/utils/copy.sh" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/blog-1/src/utils/readline.js" />
+        <option value="$PROJECT_DIR$/blog-express/package.json" />
+        <option value="$PROJECT_DIR$/blog-express/middleware/login.Check.js" />
+        <option value="$PROJECT_DIR$/blog-express/middleware/loginCheck.js" />
+        <option value="$PROJECT_DIR$/blog-express/routes/user.js" />
+        <option value="$PROJECT_DIR$/blog-express/db/redis.js" />
+        <option value="$PROJECT_DIR$/blog-express/routes/blog.js" />
+        <option value="$PROJECT_DIR$/blog-express/app.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -157,10 +188,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/blog-express/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/blog-express/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
@@ -188,26 +221,7 @@
             <path>
               <item name="blog-shuangyue" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-shuangyue" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog-shuangyue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-shuangyue" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-1" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog-shuangyue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-shuangyue" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog-shuangyue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-shuangyue" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-express" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -220,17 +234,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/blog-1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog-express/routes" />
+      <recent name="$PROJECT_DIR$/blog-express" />
       <recent name="$PROJECT_DIR$/blog-1/src/utils" />
       <recent name="$PROJECT_DIR$/blog-1/src/logs" />
       <recent name="$PROJECT_DIR$/stream" />
-      <recent name="$PROJECT_DIR$/blog-1/src/db" />
-      <recent name="$PROJECT_DIR$/blog-1/src/controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,18 +270,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555255588327</updated>
-      <workItem from="1555255590083" duration="13325000" />
+      <workItem from="1555255590083" duration="17797000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13325000" />
+    <option name="totallyTimeSpent" value="17797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1850" y="23" width="1190" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.1924722" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.1924722" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -275,7 +290,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.30512822" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.30512822" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -342,27 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-1/src/router/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-1/src/router/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stream/data-bak.txt">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -394,7 +388,7 @@
     <entry file="file://$PROJECT_DIR$/stream/cp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="27" selection-end-column="2" />
+          <caret line="10" selection-start-line="10" selection-end-line="27" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -408,7 +402,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -429,28 +423,130 @@
     <entry file="file://$PROJECT_DIR$/blog-1/src/utils/copy.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-1/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="43" column="53" lean-forward="true" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-1/src/utils/readline.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-1/logs/access.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="516">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-1/src/utils/readline.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-1/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/conf/db.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/db/mysql.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/controller/blog.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/model/resModel.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/utils/log.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/node_modules/express/lib/response.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="263" column="35" lean-forward="true" selection-start-line="262" selection-start-column="33" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-1/src/router/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="76" column="10" selection-start-line="69" selection-start-column="8" selection-end-line="76" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-1/src/router/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/middleware/loginCheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/db/redis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/routes/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/logs/access.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-express/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
