@@ -4,6 +4,10 @@ const env = process.env.NODE_ENV  // 环境参数
 let MYSQL_CONF
 let REDIS_CONF
 
+const REDIS_CONF_host = '***'
+
+const REDIS_CONF_password = '***'
+
 if (env === 'dev') {
     // mysql
     MYSQL_CONF = {
@@ -17,8 +21,8 @@ if (env === 'dev') {
     // redis
     REDIS_CONF = {
         port: 6379,
-        host: '47.93.97.5',
-        password: 'Pi3.14159'
+        host: REDIS_CONF_host,
+        password: REDIS_CONF_password
     }
 }
 
@@ -35,8 +39,8 @@ if (env === 'production') {
     // redis
     REDIS_CONF = {
         port: 6379,
-        host: '47.93.97.5',
-        password: 'Pi3.14159'
+        host: REDIS_CONF_host,
+        password: REDIS_CONF_password
     }
 }
 

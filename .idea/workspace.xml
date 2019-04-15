@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c4183cc-fd5b-49b9-8985-c43bf30ae0f6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/blog-koa2/conf/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/controller/blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/controller/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/db/mysql.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/db/redis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/middleware/loginCheck.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/model/resModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/utils/copy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/utils/cryp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/utils/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-koa2/utils/readline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-express/conf/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-express/conf/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-1/src/conf/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-1/src/conf/db.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,11 +55,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog-koa2/conf/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="216">
+              <caret line="12" column="18" lean-forward="true" selection-end-line="49" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog-1/src/conf/db.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -111,15 +108,6 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/express/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -184,6 +172,7 @@
         <option value="$PROJECT_DIR$/blog-koa2/package.json" />
         <option value="$PROJECT_DIR$/blog-express/conf/db.js" />
         <option value="$PROJECT_DIR$/blog-koa2/conf/db.js" />
+        <option value="$PROJECT_DIR$/blog-1/src/conf/db.js" />
       </list>
     </option>
   </component>
@@ -231,12 +220,19 @@
             <path>
               <item name="blog-shuangyue" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-shuangyue" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-express" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog-shuangyue" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-shuangyue" type="462c0819:PsiDirectoryNode" />
-              <item name="blog-express" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-shuangyue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-shuangyue" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -310,12 +306,12 @@
       <option name="presentableId" value="Default" />
       <updated>1555255588327</updated>
       <workItem from="1555255590083" duration="18127000" />
-      <workItem from="1555348069870" duration="4697000" />
+      <workItem from="1555348069870" duration="4779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22824000" />
+    <option name="totallyTimeSpent" value="22906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1850" y="23" width="1190" height="877" extended-state="0" />
@@ -404,13 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-1/src/conf/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -686,8 +675,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-koa2/conf/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state relative-caret-position="216">
+          <caret line="12" column="18" lean-forward="true" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-1/src/conf/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
         </state>
       </provider>
     </entry>
