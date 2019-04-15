@@ -12,7 +12,7 @@ const { exec } = require('../db/mysql')
 
 const blog = module.exports
 
-blog.getList = (author, keyword) => {
+blog.getList = async (author, keyword) => {
     let sql = `select * from blogs where 1=1 `
     if(author){
         sql += `and author='${author}'`
@@ -23,17 +23,16 @@ blog.getList = (author, keyword) => {
 
     sql += `order by createtime desc`
 
-    return exec(sql)
+    return await exec(sql)
 }
 
-blog.getDetail = (id) => {
+blog.getDetail = async (id) => {
     let sql = `select * from blogs where id='${id}' `
-    return exec(sql).then(rows => {
-        return rows[0]
-    })
+    const rows = await exec(sql)
+    return rows[0]
 }
 
-blog.newBlog = ( blogData = {} ) => {
+blog.newBlog = async ( blogData = {} ) => {
     const title = xss(blogData.title)
     const content = xss(blogData.content)
     const author = blogData.author || 'zhangsan'
@@ -43,32 +42,45 @@ blog.newBlog = ( blogData = {} ) => {
         insert into blogs (title, content, createtime, author)
         values ('${title}', '${content}', ${createTime}, '${author}');
     `
-    return exec(sql).then(insertData => {
-        return {
-            id: insertData.insertId
-        }
-    })
+    const insertData = await exec(sql)
+    return {
+        id: insertData.insertId
+    }
+    // return exec(sql).then(insertData => {
+    //     return {
+    //         id: insertData.insertId
+    //     }
+    // })
 }
 
-blog.updateBlog = (id, blogData = {} ) => {
+blog.updateBlog = async (id, blogData = {} ) => {
     const title = xss(blogData.title)
     const content = xss(blogData.content)
     const sql = `update blogs ste title='${title}' and content='${content}' where id=${id}`
-
-    return exec(sql).then(updateData => {
-        if(updateData.affectedRows > 0){
-            return true
-        }
-        return false
-    })
+    const updateData = await exec(sql)
+    if(updateData.affectedRows > 0){
+        return true
+    }
+    return false
+    // return exec(sql).then(updateData => {
+    //     if(updateData.affectedRows > 0){
+    //         return true
+    //     }
+    //     return false
+    // })
 }
 
-blog.delBlog = (id, author) => {
+blog.delBlog = async (id, author) => {
     const sql = `delete form blogs where id='${id}' and author=author='${author}'`
-    return exec(sql).then(delData => {
-        if (delData.affectedRows > 0) {
-            return true
-        }
-        return false
-    })
+    const delData = await exec(sql)
+    if (delData.affectedRows > 0) {
+        return true
+    }
+    return false
+    // return exec(sql).then(delData => {
+    //     if (delData.affectedRows > 0) {
+    //         return true
+    //     }
+    //     return false
+    // })
 }
