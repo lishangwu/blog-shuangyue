@@ -60,5 +60,7 @@ typings/
 # next.js build output
 .next
 
-.idea/
 package-lock.json
+.idea/
+/idea/
+.DS_Store
